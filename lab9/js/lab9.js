@@ -4,12 +4,13 @@
     Author: Isaiah Arreola
     Date 2024
 */
+$(document).ready(function() {
 
 // add button to challenge section
 $("#challenge").append("<button id='button-challenge'>Make Special</button>");
 
 // add a click listener to the challenge button
-$("#button-challenge").click(function(){
+$("button-challenge").click(function(){
     // now add (or subtract) the "special" class to the section
     $("#challenge").toggleClass("special");
 });
@@ -18,7 +19,7 @@ $("#button-challenge").click(function(){
 $("#purpose").append("<button id='button-purpose'>Make Special</button>");
 
 // add a click listener to the purpose button
-$("#button-purpose").click(function(){
+$("button-purpose").click(function(){
     // now add (or subtract) the "special" class to the section
     $("#purpose").toggleClass("special");
 });
@@ -27,7 +28,9 @@ $("#button-purpose").click(function(){
 $("#results").append("<button id='button-results'>Make Special</button>");
 
 // add a click listener to the results button
-$("#button-results").click(function(){
+$("button-results").click(function(){
     // now add (or subtract) the "special" class to the section
     $("#results").toggleClass("special");
+});
+
 });
