@@ -1,25 +1,33 @@
+/*
+    lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
+    Requirements: jQuery must be loaded for this script to work.
+    Author: Isaiah Arreola
+    Date 2024
+*/
 
-// Author: Isaiah Arreola
-// Created: 29 April
-// License: Public Domain
+// add button to challenge section
+$("#challenge").append("<button id='button-challenge'>Make Special</button>");
 
-function isEven(x){
-    return (x % 2 == 0);
-}
+// add a click listener to the challenge button
+$("button-challenge").click(function(){
+    // now add (or subtract) the "special" class to the section
+    $("#challenge").toggleClass("special");
+});
 
-// test function
-console.log("Is 1 even? ", isEven(1));
-console.log("Is 2 even? ", isEven(2));
+// add button to purpose section
+$("#purpose").append("<button id='button-purpose'>Make Special</button>");
 
-array = [50, 67, 6, 18, 40, 155, 2000]
-console.log("My array", array);
+// add a click listener to the purpose button
+$("button-purpose").click(function(){
+    // now add (or subtract) the "special" class to the section
+    $("#purpose").toggleClass("special");
+});
 
-var result = array.map(isEven);
-// should return [true, false, true, true, true, false, true]
-console.log("Test of evenness of array:", result);
+// add button to results section
+$("#results").append("<button id='button-results'>Make Special</button>");
 
-var result = array.map(function(x){
-    return x ** 0.5;
-})
-// should return [7.0710678118654755, 8.18535277187245, 2.449489742783178, 4.242640687119285, 6.324555320336759, 12.44989959733, 44.721359549995796]
-console.log ("Squareroot of array:", result);
+// add a click listener to the results button
+$("button-results").click(function(){
+    // now add (or subtract) the "special" class to the section
+    $("#results").toggleClass("special");
+});
