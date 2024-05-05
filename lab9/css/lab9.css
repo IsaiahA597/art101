@@ -6,9 +6,9 @@
   border: solid 1px #000000;
   background-color: #1184a6;
 }
-#purpose {
-  background-color: #f11b0c;
-}
 .special {
     background-color:#1da611;
+    border: dotted 10px red;
+    color: rgb(70, 25, 138);
+    font-weight: bold;
 }
