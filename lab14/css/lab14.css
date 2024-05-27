@@ -25,3 +25,11 @@
   border: solid 1px black;
   min-height: 100px;
 }
+
+#center{
+  display:block;
+  margin: 10px;
+  max-width: 450px;
+}
+
+
